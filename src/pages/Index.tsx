@@ -1,16 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import CricketLoader from '@/components/CricketLoader';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import IPLTeamsGrid from '@/components/IPLTeamsGrid';
+import CricketFormats from '@/components/CricketFormats';
+import BattingScorecard from '@/components/BattingScorecard';
+import HallOfFame from '@/components/HallOfFame';
+import CricketQuiz from '@/components/CricketQuiz';
+import FactsTicker from '@/components/FactsTicker';
+import Footer from '@/components/Footer';
+import AudioPlayer from '@/components/AudioPlayer';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      <CricketLoader />
+      <Navbar />
+      <HeroSection />
+      <FactsTicker />
+      <IPLTeamsGrid />
+      <CricketFormats />
+      <BattingScorecard />
+      <HallOfFame />
+      <CricketQuiz />
+      <FactsTicker />
+      <Footer />
+      <AudioPlayer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
